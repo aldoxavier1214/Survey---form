@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form</title>
+        <link rel="stylesheet" href="survey.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+
+            <form id="f1">
+            <h3>CREATE ACCOUNT WITH CODE ALPHA</h3>
+            <input type="text" placeholder="username"required>
+            <input type="text" placeholder="email"required>
+            <input type="text" placeholder="password"required>
+            <input type="text" placeholder="Confirm password"required>
+
+            <div class="btn-box"><button type="button" id="next1">NEXT</button></div>
+            </form>
+
+            <form id="f2">
+                <h3>ACADAMIC DETAILS</h3>
+                <input type="text" placeholder="10th%"required>
+                <input type="text" placeholder="12th%"required>
+                <input type="text" placeholder="CURRENT COURSE"required>
+                <input type="text" placeholder="CGPA"required>
+    
+                <div class="btn-box"><button type="button" id="back1">BACK</button>
+                    <button type="button" id="next2">NEXT</button></div>
+                </form>
+
+                <form id="f3">
+                    <h3>SOCIAL LINKS</h3>
+                    <input type="text" placeholder="LINKEDIN"required>
+                    <input type="text" placeholder="GITHUB"required>
+                    <!-- <input type="text" placeholder="LEETCODE"required> -->
+                    <input type="text" placeholder="TELEGRAM"required>
+        
+                    <div class="btn-box"><button type="button" id="back2">BACK</button>
+                        <button type="button" id="next3">NEXT</button></div>
+
+                    </form>
+
+                    <form id="f4">
+                        <h3>PERSONAL DETAILS</h3>
+                        <input type="text" placeholder="NAME"required>
+                        <input type="text" placeholder="EMIS NUMBER"required>
+                        <input type="text" placeholder="ADDRESS"required>
+                        <input type="text" placeholder="GENDER"required>
+                        <input type="text" placeholder="EXPERIENCE"required>
+            
+                        <div class="btn-box"><button type="button" id="back3">BACK</button>
+                            <button type="button" id="next4">NEXT</button></div>
+                            
+                        </form>
+
+                        <form id="f5">
+                            <h3>DOMAIN</h3>
+                            <input type="text" placeholder="INTERESTED DOMAINS"required>
+                            <input type="text" placeholder="ONLINE 0R OFFLINE"required>
+                            <input type="text" placeholder="SESSION"required>
+           
+                
+                            <div class="btn-box"><button type="button" id="back4">BACK</button>
+                                <button type="submit">SUBMIT</button></div>
+                                
+                            </form>
+
+                    
+                            <div class="step-row">
+                                <div id="progress"></div>
+                                <div class="step-col"><small>PAGE 1</small></div>
+                                <div class="step-col"><small>PAGE2</small></div>
+                                <div class="step-col"><small>PAGE3</small></div>
+                                <div class="step-col"><small>PAGE4</small></div>
+                                <div class="step-col"><small>PAGE5</small></div>
+                            </div>
+        </div>
+        <script>
+        var f1 = document.getElementById("f1");
+        var f2 = document.getElementById("f2");
+        var f3 = document.getElementById("f3");
+        var f4 = document.getElementById("f4");
+        var f5 = document.getElementById("f5");
+        var next1 = document.getElementById("next1");
+        var next2 = document.getElementById("next2");
+        var next3 = document.getElementById("next3");
+        var next4 = document.getElementById("next4");
+        var back1 = document.getElementById("back1");
+        var back2 = document.getElementById("back2");
+        var back3 = document.getElementById("back3");
+        var back4 = document.getElementById("back4");
+        next1.onclick = function(){
+            f1.style.left ="-450px";
+            f2.style.left ="40px";
+            progress.style.width = "150px";
+          
+        }
+        back1.onclick= function(){
+            f1.style.left ="40px";
+            f2.style.left ="450px";
+            progress.style.width = "80px";
+
+        }
+        next2.onclick = function(){
+            f2.style.left ="-450px";
+            f3.style.left ="40px";
+            progress.style.width = "210px";
+        }
+        back2.onclick= function(){
+            f2.style.left ="40px";
+            f3.style.left ="450px";
+            progress.style.width = "150px";
+
+        }
+        next3.onclick = function(){
+            f3.style.left ="-450px";
+            f4.style.left ="40px";
+            progress.style.width = "290px";
+        }
+        back3.onclick= function(){
+            f3.style.left ="40px";
+            f4.style.left ="450px";
+            progress.style.width = "210px";
+
+        }
+        next4.onclick = function(){
+            f4.style.left ="-450px";
+            f5.style.left ="40px";
+            progress.style.width = "460px";
+        }
+        back4.onclick= function(){
+            f4.style.left ="40px";
+            f5.style.left ="450px";
+            progress.style.width = "280px";
+
+        }
+        
+       
+        </script>
+    </body>
+</html>
